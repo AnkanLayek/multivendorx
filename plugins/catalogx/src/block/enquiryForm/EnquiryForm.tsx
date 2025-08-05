@@ -50,21 +50,6 @@ const EnquiryForm = () => {
 
     return (
         <div className="enquiry-form-modal">
-            { toast && (
-                <div className="admin-notice-display-title">
-                    <i className="admin-font adminlib-icon-yes"></i>
-                    { responseMessage }
-                </div>
-            ) }
-            { loading && (
-                <section className="loader-component">
-                    <div className="three-body">
-                        <div className="three-body__dot"></div>
-                        <div className="three-body__dot"></div>
-                        <div className="three-body__dot"></div>
-                    </div>
-                </section>
-            ) }
             <div className="modal-wrapper">
                 <div>{ enquiryFormData.content_before_form }</div>
                 { proActive ? (
@@ -79,6 +64,12 @@ const EnquiryForm = () => {
                     />
                 ) }
                 <div>{ enquiryFormData.content_after_form }</div>
+                { toast && (
+                <div className="admin-notice-display-title">
+                    <i className="admin-font adminlib-icon-yes"></i>
+                    { responseMessage }
+                </div>
+                ) }
             </div>
         </div>
     );
