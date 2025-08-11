@@ -1,3 +1,82 @@
+@font-face {
+    font-family: 'popup-icon';
+    src: url('../../assets/fonts/popup-icon.eot?u2mltj');
+    src: url('../../assets/fonts/popup-icon.eot?u2mltj#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/popup-icon.ttf?u2mltj') format('truetype'),
+      url('../../assets/fonts/popup-icon.woff?u2mltj') format('woff'),
+      url('../../assets/fonts/popup-icon.svg?u2mltj#popup-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="popup-icon-"],
+  [class*=" popup-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'popup-icon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .popup-icon-discounts:before {
+    content: "\e900";
+  }
+  
+  .popup-icon-dashboard:before {
+    content: "\e901";
+  }
+  
+  .popup-icon-emails:before {
+    content: "\e902";
+  }
+  
+  .popup-icon-out-of-stock:before {
+    content: "\e903";
+  }
+  
+  .popup-icon-shortcode:before {
+    content: "\e904";
+  }
+  
+  .popup-icon-wholesale-order:before {
+    content: "\e905";
+  }
+  
+  .popup-icon-popup-star:before {
+    content: "\e906";
+  }
+  
+  .popup-icon-dynamic-pricing:before {
+    content: "\e907";
+  }
+  
+  .popup-icon-different-users:before {
+    content: "\e908";
+  }
+  
+  .popup-icon-add-file-uploads:before {
+    content: "\e909";
+  }
+  
+  .popup-icon-exclusive-forms:before {
+    content: "\e90a";
+  }
+  
+  .popup-icon-personalized-pricing:before {
+    content: "\e90b";
+  }
+  
+  .popup-icon-multiple-products:before {
+    content: "\e90c";
+  }
 .desc{
     border: 0.120rem solid #e0e4e9;
     border-radius: 0.25rem;
@@ -22,7 +101,7 @@
     .basic-input,
     .basic-select,
     .textarea-basic {
-        width: 96%;
+        width: 100%;
         border: 0.063rem solid #e0e4e9 !important; // for overwrite woocommerce style
         border-radius: 0.25rem;
         padding: 0.313rem 0.5rem;
@@ -55,8 +134,6 @@
             width: 100%;
 
             &.attachment-section{
-                border: 0.125rem dashed #cacaca;
-
                 .attachment-label{
                     display: flex;
                     flex-direction: column;
@@ -112,6 +189,9 @@
         select{
             background: none !important;
         }
+    }
+    .pagination-arrow{
+      align-items: center;
     }
 }
 // table style end
